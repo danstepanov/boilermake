@@ -1,0 +1,24 @@
+---
+# manifest file for the appname application
+applications:
+- name: chilloutebola
+  ## The hostname/subdomain for the app.  Command-line option: -n
+  host: chilloutebola
+  ## The memory limit for all instances of the app. Command-line option: -m
+  memory: 256M
+  ## A custom domain to use for the app.  Command-line option: -d
+  domain: mybluemix.net
+  ## The local location of the application bits to push.  Command-line option: -p
+  path: ./
+  ## Number of app instances.  Command-line option: -i
+  #instances: 1
+  ## Number of seconds to allow for an app to start.  Command-line option: -t
+  #timeout: 60
+  ## A custom buildpack to use.  Command-line option: -b
+  #buildpack: buildpack_URL
+  ## A custom start command.  Command-line option: -c
+  command: bundle exec rails s -p $PORT
+  ## Prevent a route from being auto-created?  Command-line: --no-route
+  #no-route: true
+  ## Declare any environment variables for the app.
+  ## These will be available in VCAP_APPLICATION
