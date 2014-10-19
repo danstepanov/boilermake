@@ -24,9 +24,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Chill Out Ebola</a>
+          <a class="navbar-brand" href="/">Chill Out Ebola</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">About This</a></li>
             <li><a href="#">Poop</a></li>
@@ -42,46 +42,129 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="">AIDS</a></li>
-            <li><a href="">Anthrax</a></li>
-            <li><a href="">Bacterial Pneumonia</a></li>
-            <li><a href="">Botulism</a></li>
-            <li><a href="">Chicken Pox</a></li>
-            <li><a href="">Cholera</a></li>
-            <li><a href="">Common Cold</a></li>
-            <li><a href="">Gonorrhea</a></li>
-            <li><a href="">Influenza</a></li>
-            <li><a href="">Herpes</a></li>
-            <li><a href="">Mononucleosis</a></li>
-            <li><a href="">Herpes</a></li>
-            <li><a href="">Leprosy</a></li>
-            <li><a href="">Lyme Disease</a></li>
-            <li><a href="">Malaria</a></li>
-            <li><a href="">Measles</a></li>
-            <li><a href="">Meningitis</a></li>
-            <li><a href="">Mumps</a></li>
-            <li><a href="">Rabies</a></li>
-            <li><a href="">Herpes</a></li>
-            <li><a href="">Scabies</a></li>
-            <li><a href="">Sepsis</a></li>
-            <li><a href="">Shingles</a></li>
-            <li><a href="">Smallpox</a></li>
-            <li><a href="">Syphilis</a></li>
-            <li><a href="">Tetanus</a></li>
-            <li><a href="">Tinea Pedis</a></li>
-            <li><a href="">Tuberculosis</a></li>
-            <li><a href="">Herpes</a></li>
-            <li><a href="">Viral Hepatitis</a></li>
-            <li><a href="">West Nile Fever</a></li>
-            <li><a href="">Yellow Fever</a></li>
+            <li class="active"><a href="#aids">AIDS</a></li>
+            <li><a href="#anthrax">Anthrax</a></li>
+            <li><a href="#pneumonia">Bacterial Pneumonia</a></li>
+            <li><a href="#botulism">Botulism</a></li>
+            <li><a href="#chickenpox">Chicken Pox</a></li>
+            <li><a href="#cholera">Cholera</a></li>
+            <li><a href="#commoncold">Common Cold</a></li>
+            <li><a href="#gonorrhea">Gonorrhea</a></li>
+            <li><a href="#influenza">Influenza</a></li>
+            <li><a href="#herpes">Herpes</a></li>
+            <li><a href="#mononucleosis">Mononucleosis</a></li>
+            <li><a href="#herpes">Herpes</a></li>
+            <li><a href="#leprosy">Leprosy</a></li>
+            <li><a href="#lymedisease">Lyme Disease</a></li>
+            <li><a href="#malaria">Malaria</a></li>
+            <li><a href="#measles">Measles</a></li>
+            <li><a href="#meningitis">Meningitis</a></li>
+            <li><a href="#mumps">Mumps</a></li>
+            <li><a href="#rabies">Rabies</a></li>
+            <li><a href="#herpes">Herpes</a></li>
+            <li><a href="#scabies">Scabies</a></li>
+            <li><a href="#sepsis">Sepsis</a></li>
+            <li><a href="#shingles">Shingles</a></li>
+            <li><a href="#smallpox">Smallpox</a></li>
+            <li><a href="#syphilis">Syphilis</a></li>
+            <li><a href="#tetanus">Tetanus</a></li>
+            <li><a href="#tineapedis">Tinea Pedis</a></li>
+            <li><a href="#tuberculosis">Tuberculosis</a></li>
+            <li><a href="#herpes">Herpes</a></li>
+            <li><a href="#viralhepatitus">Viral Hepatitis</a></li>
+            <li><a href="westnile">West Nile Fever</a></li>
+            <li><a href="yellowfever">Yellow Fever</a></li>
+				<script>
+				    $(".nav li").on("click", function() {
+				      $(".nav li").removeClass("active");
+				      $(this).addClass("active");
+				      $(".col-sm-9 h1").text($(this).text());
+				    });
+				</script>
           </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Overview</h1>
-<!--
-          <div class="row placeholders">
+	        
+	    
+	      <h1 class="page-header"><a id="aids">AIDS</a></h1>
+	      <div class="col-md-2"></div>
+	      <div class="col-md-10" style="position:absolute">
+	      <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['geochart']}]}"></script>
+       		<div id="regions_div" style="width: 1680px; height: 1050px; "></div>
+			
+			<center><script> 
+			google.setOnLoadCallback(drawRegionsMap);
+
+			function drawRegionsMap() {
+
+			 var data = google.visualization.arrayToDataTable([
+			['State', 'STD Spread'],
+			['Alabama',208.29],
+			['Alaska',219.13],
+			['Arizona',133.11],
+			['Arkansas',158.32],
+			['California',135.08],
+			['Colorado',127.13],
+			['Connecticut',121.53],
+			['Delaware',185.57],
+			['US-DC',413.44],
+			['Florida',133.68],
+			['Georgia',200.53],
+			['Hawaii',139.92],
+			['Idaho',71.28],
+			['Illinois',180.62],
+			['Indiana',133.2],
+			['Iowa',99.2],
+			['Kansas',119.62],
+			['Kentucky',107],
+			['Louisiana',232.04],
+			['Maine',53.24],
+			['Maryland',169.58],
+			['Massachusetts',83.52],
+			['Michigan',168.84],
+			['Minnesota',91.34],
+			['Mississippi',275.9],
+			['Missouri',162.11],
+			['Montana',86],
+			['Nebraska',111.79],
+			['Nevada',125.65],
+			['New Hampshire',47.08],
+			['New Jersey',96.15],
+			['New Mexico',156.96],
+			['New York',145.35],
+			['North Carolina',180.52],
+			['North Dakota',85.34],
+			['Ohio',168.36],
+			['Oklahoma',152.29],
+			['Oregon',90.72],
+			['Pennsylvania',126.65],
+			['Rhode Island',111.78],
+			['South Carolina',232.35],
+			['South Dakota',114.45],
+			['Tennessee',174.83],
+			['Texas',161.04],
+			['Utah',62.3],
+			['Vermont',52.24],
+			['Virginia',137.06],
+			['Washington',103.38],
+			['West Virginia',67.68],
+			['Wisconsin',144.38],
+			['Wyoming',81.25],
+
+			]);
+			         
+			var options = {};
+			options['region'] = 'US';
+			options['dataMode'] = 'regions'; 
+			options['resolution'] = 'provinces'                                           
+
+			var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+			chart.draw(data, options);
+			      }
+
+			</script></center>
+          <!--<div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
@@ -100,8 +183,8 @@
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
-          </div>
--->
+          </div>-->
+
          <!-- <h2 class="sub-header">Section title</h2>
           <div class="table-responsive">
             <table class="table table-striped">
@@ -230,9 +313,10 @@
               </tbody>
             </table>
           </div> -->
-        </div>
+        
       </div>
     </div>
+   </div>
 
 
 
